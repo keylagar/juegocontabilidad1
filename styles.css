@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.timer {
+    font-size: 1.5em;
+    margin: 20px;
+    padding: 10px;
+    display: inline-block;
+    background-color: green;
+    transition: background-color 0.5s;
+}
+
+#game {
+    margin: 20px;
+}
+
+.account {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    cursor: grab;
+    transition: transform 0.2s;
+}
+
+.account:active {
+    transform: scale(1.1);
+}
+
+.category {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border: 2px dashed #ccc;
+    position: relative;
+}
+
+.category::before {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.correct {
+    background-color: #c8e6c9;
+}
+
+.incorrect {
+    background-color: #ffcdd2;
+}
+
+#restart, #exit {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    display: none;
+}
+
+#scoreTable {
+    margin-top: 20px;
+}
+
+#playerNamePrompt {
+    margin: 20px;
+}
