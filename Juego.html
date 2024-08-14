@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificación de Cuentas</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <h1>Clasificación de Cuentas</h1>
+    <div id="playerNamePrompt">
+        <label for="playerName">Ingresa tu nombre:</label>
+        <input type="text" id="playerName" required>
+        <button onclick="startGame()">Iniciar Juego</button>
+    </div>
+    <div id="timer" class="timer">Tiempo: <span id="time">120</span> segundos</div>
+    <div id="game">
+        <!-- Las cuentas se generarán dinámicamente -->
+    </div>
+    <div id="categories">
+        <!-- Las categorías se generarán dinámicamente -->
+    </div>
+    <button id="restart" onclick="startGame()">Volver a Jugar</button>
+    <button id="exit" onclick="exitGame()">Salir</button>
+    <div id="result"></div>
+    <div id="scoreTable">
+        <h2>Tabla de Puntuaciones</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+
+                    <th>Puntos</th>
+                </tr>
+            </thead>
+            <tbody id="scoreBody">
+                <!-- Las puntuaciones se generarán dinámicamente -->
+            </tbody>
+        </table>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
